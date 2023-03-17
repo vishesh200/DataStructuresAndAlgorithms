@@ -1,0 +1,35 @@
+package Arrays;
+
+public class ArrayReversal {
+    public static void printArray(int[] arr) {
+        for(int i=0; i<arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void reverse(int[] arr) {
+        int l = arr.length;
+        if(l == 0 || l == 1) {
+            return;
+        }
+        int end = l-1;
+        int start = 0;
+        for(int i=0; i<l; i++) {
+            if(start >= end) {
+                return;
+            }
+            // swapping corresponding first and last elements
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++; end--;
+        }
+    }
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        printArray(arr);
+        reverse(arr);
+        printArray(arr);
+    }
+}
