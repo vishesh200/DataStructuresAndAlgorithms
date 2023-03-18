@@ -16,8 +16,8 @@ public class BacktrackingOnArrays {
             return;
         }
         arr[index] = index+1;
-        updateValues(arr,index+1);
-        arr[index] -= 2;
+        updateValues(arr,index+1); // recursive step
+        arr[index] -= 2; // backtracking step
     }
     public static void main(String[] args) {
         int[] arr = new int[5];
