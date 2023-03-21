@@ -42,7 +42,7 @@ public class ContainerWithMostWaterProblem {
                 leftPointer++;
             }
             else {
-                rightPointer++;
+                rightPointer--;
             }
         }
         return maxWater;
