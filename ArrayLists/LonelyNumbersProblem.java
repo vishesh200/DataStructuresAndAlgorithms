@@ -21,7 +21,7 @@ public class LonelyNumbersProblem {
         ArrayList<Integer> lonelyNumbers = new ArrayList<>();
 
         for(int num:nums) {
-             int frequency = frequencyMap.get(num);
+            int frequency = frequencyMap.get(num);
             int frequencyOfPrev = frequencyMap.getOrDefault(num - 1, 0);
             int frequencyOfNext = frequencyMap.getOrDefault(num + 1, 0);
 
