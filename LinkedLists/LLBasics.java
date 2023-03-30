@@ -201,9 +201,9 @@ public class LLBasics {
             head = head.next; // Equivalent to remove first operation
             return;
         }
-        // Nth from the end means (N-size+1)th from the beginning
+        // Nth from the end means (size-N)th from the beginning
         int i = 1;
-        while(i < n - size) {
+        while(i < size - n) {
             temp = temp.next;
             i++;
         }
