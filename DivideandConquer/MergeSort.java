@@ -19,12 +19,13 @@ public class MergeSort {
         while((i <= mid) && (j <= ei)) {
             if(arr[i] < arr[j]) {
                 temp[k] = arr[i];
-                i++; k++;
+                i++;
             }
             else {
                 temp[k] = arr[j];
-                k++; j++;
+                j++;
             }
+            k++;
         }
 
         while(i <= mid) {
