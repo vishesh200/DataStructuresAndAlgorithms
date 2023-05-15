@@ -38,7 +38,7 @@ public class ContainerWithMostWaterProblem {
             maxWater = Math.max(maxWater,currentWater);
 
             // Comparing the pointers
-            if(leftPointer < rightPointer) {
+            if(height.get(leftPointer) < height.get(rightPointer)) {
                 leftPointer++;
             }
             else {
