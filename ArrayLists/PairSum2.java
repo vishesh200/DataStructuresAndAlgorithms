@@ -7,7 +7,7 @@ sum is equal to a predefined target */
 
 /* Firstly we'll find the breaking point which means the index after which
 values are not in the originally ascending order
-Ex:  list = [6,7,1,2,3,4] so breaking point = 1
+Ex:  list = [6,7,1,2,3,4] so breaking point = 7
 
 Next we are going to implement the left and right pointers in such a way that
 whenever they reach to a point after which they are going to go index out of bounds
