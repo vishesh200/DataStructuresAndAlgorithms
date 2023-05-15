@@ -3,7 +3,7 @@ package ArrayLists;
 import java.util.ArrayList;
 
 /* Given a sorted ArrayList, we need to find out if the target can be equalled by
- summing any two pairs of numbers present in the ArrayList */
+ summing any pair of two numbers present in the ArrayList */
 public class PairSum {
     // O(n^2) time complexity
     public static boolean bruteForceApproach(ArrayList<Integer> list,int target) {
